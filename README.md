@@ -2,13 +2,13 @@
 
 OVERVIEW
 
-  The purpose of this analysis was to use Python and analysis an election. The voter turn out, canidate vote tally and county turnout were done via this analysis.
+  The purpose of this analysis was to use Python and analysis an election. The voter turn out, candidate vote tally and county turnout were done via this analysis.
   
 ELECTION AUDIT RESULTS
 
   The total number of votes cast in this elections was 369711 votes.
   
-  Each county had the following number of votes and theri respective percantage of the votes casted.
+  Each county had the following number of votes and their respective percantage of the votes casted: 
     Arapahoe County 38855 votes which is 10.5% of the total vote.
     Denver County 306055 votes which is 82.8% of the total vote.
     Jefferson County 24801 votes which is 6.7% of the total vote.
