@@ -5,7 +5,7 @@
 # 4. The total number of votes each candiate won.
 # 5. The winner of the election based on popular vote.
 
-file_to_load = "/Users/farzanasiddiqui/Desktop/Data/Election_Analysis/Resources/election_results.csv"
+file_to_load = "./Resources/election_results.csv"
 ed = "file_to_load"
 # Add our dependencies.
 import csv
