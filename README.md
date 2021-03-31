@@ -6,19 +6,21 @@ OVERVIEW
   
 ELECTION AUDIT RESULTS
 
-  The total number of votes cast in this elections was xxx.
+  The total number of votes cast in this elections was 369711 votes.
   
-  Each county had (number of votes) and this made up (percentage make up of total vote).
-    county 1
-    county 2
+  Each county had the following number of votes and theri respective percantage of the votes casted.
+    Arapahoe County 38855 votes which is 10.5% of the total vote.
+    Denver County 306055 votes which is 82.8% of the total vote.
+    Jefferson County 24801 votes which is 6.7% of the total vote.
     
-  This xxcountyxx had the largest number of votes.
+  Denver County had the largest number of votes.
   
   Each candiate recieved this many votes and there their total vote capture percentage:
-    candiate 1
-    canidate 2
+    DeGette recieved 272892 which was 73.8% of the vote.
+    Doane recieved 11606 which was 3.1% of the vote.
+    Stockham recieved 85213 which was 23.0% of the vote.
   
-  This canidate won the election, capturing this many votes whihc was % of the total votes casted.
+  DeGette won the election, capturing 272892 votes which was 73.8% of the total votes casted.
   
 Election Audit Sumamary
 
