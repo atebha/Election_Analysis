@@ -1,4 +1,4 @@
-file_to_load = '/Users/farzanasiddiqui/Desktop/Data/Election_Analysis//Resources/election_results.csv'
+file_to_load = './Resources/election_results.csv'
 ed = "file_to_load"
 # Add our dependencies.
 import csv
