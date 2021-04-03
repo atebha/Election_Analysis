@@ -5,7 +5,7 @@
 # 4. The total number of votes each candiate won.
 # 5. The winner of the election based on popular vote.
 
-file_to_load = "./Resources/election_results.csv"
+file_to_load = "/Users/farzanasiddiqui/Desktop/Data/Election_Analysis/Resources/election_results.csv"
 ed = "file_to_load"
 # Add our dependencies.
 import csv
@@ -13,7 +13,7 @@ import os
 # Assign a variable to load a file from a path.
 ed = os.path.join("Resources", "election_results.csv")
 # Assign a variable to save the file to a path.
-file_to_save = os.path.join("Election_Analysis", "election_analysis.txt")
+file_to_save = os.path.join("/Users/farzanasiddiqui/Desktop/Data/Election_Analysis/election_analysis.txt")
 
 # Initialize a total vote counter
 total_votes = 0
@@ -70,7 +70,7 @@ with open(file_to_load) as election_data:
         # If the county doesn't match any existing county.
         if county_name not in county_options:
             # Add it to the list of counties
-            county.options.append(county_name)
+            county_options.append(county_name)
 
             # Track county votes
             county_votes[county_name] = 0
@@ -85,7 +85,7 @@ with open(file_to_save, "w") as txt_file:
     election_result = (
         f"\nElection Result\n"
         f"----------------------\n"
-        f"Total Votes: {total_votes: , }\n"
+        f"Total Votes: {total_votes}\n"
         f"----------------------\n\n"
         f"County Votes:\n")
     print(election_result, end = "")
@@ -141,24 +141,24 @@ with open(file_to_save, "w") as txt_file:
         # Determine if the votes is greater than the winning count.
         if (votes > winning_count) and (vote_percentage > winning_percentage):
 
-        # If true then set winning count = votes and winning percent = vote percentage.
-        winning_count = votes
-        winning_percentage = vote_percentage
-        # And set the winning_canidate equal to the canidate's name.
-        winning_candidate = candidate_name
+            # If true then set winning count = votes and winning percent = vote percentage.
+            winning_count = votes
+            winning_percentage = vote_percentage
+            # And set the winning_canidate equal to the canidate's name.
+            winning_candidate = candidate_name
                 
-# To do: print out the winning canidate, vote count and percentage to terminal.        
-winning_candidate_summary = (
-    f"-------------------------\n"
-    f"Winner: {winning_candidate}\n"
-    f"Winning Vote Count: {winning_count:,}\n"               
-    f"Winning Percentage: {winning_percentage:.1f}%\n"
-    f"-------------------------\n")
-    
-print(winning_candidate_summary)
+    # To do: print out the winning canidate, vote count and percentage to terminal.        
+    winning_candidate_summary = (
+        f"-------------------------\n"
+        f"Winner: {winning_candidate}\n"
+        f"Winning Vote Count: {winning_count:,}\n"               
+        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"-------------------------\n")
+        
+    print(winning_candidate_summary)
 
-# Save winner's name to txt file.
-txt_file.write(winning_candidate_summary)
+    # Save winner's name to txt file.
+    txt_file.write(winning_candidate_summary)
 
-# Close the file.
-election_data.close()
+    # Close the file.
+    election_data.close()
